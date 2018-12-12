@@ -54,7 +54,7 @@ class verify {
 	 * def result_array[[''],['']]
 	 * 
 	 **/
-	
+
 	@Keyword
 	def table_verify(result_array, String outerTagName){
 
@@ -92,7 +92,7 @@ class verify {
 
 
 	}
-	
+
 	/*
 	 * Verify DIV table content (passing locator)
 	 * DIV table
@@ -101,7 +101,7 @@ class verify {
 	 * def result_array[[''],['']]
 	 * 
 	 */
-	
+
 	@Keyword
 	def div_table_verify(result_array,TestObject TableLocator){
 
@@ -132,8 +132,8 @@ class verify {
 					// Mark as failed if values do not match
 					// Show where error occurred
 					KeywordUtil.markFailed( "FAILED on row "+RowIndex+" and column "+ColumnIndex+" expected '"+result_array[RowIndex][ColumnIndex]+"' and got: '"+colElement.getText()+"'", FailureHandling.STOP_ON_FAILURE )
-					
-					}
+
+				}
 
 				// Next column
 				ColumnIndex=ColumnIndex+1;
